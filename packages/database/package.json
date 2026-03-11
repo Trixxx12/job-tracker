@@ -1,0 +1,20 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "Database migrations and seeds for job-tracker",
+  "scripts": {
+    "migrate": "knex migrate:latest",
+    "migrate:make": "knex migrate:make",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
+  },
+  "dependencies": {
+    "knex": "^3.1.0",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
