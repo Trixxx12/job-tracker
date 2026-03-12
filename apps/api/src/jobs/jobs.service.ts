@@ -3,7 +3,7 @@ import { CreateJobDto } from './dto/create-job.dto';
 import { UpdateJobDto } from './dto/update-job.dto';
 import knex, { Knex } from 'knex';
 
-interface JobApplication {
+export interface JobApplication {
   id: string;
   user_id: string;
   company_name: string;
